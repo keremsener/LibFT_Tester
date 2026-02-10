@@ -21,6 +21,11 @@ This repository includes a standalone `tester.c` file designed to stress-test yo
 
 You only need the `tester.c` file and your library.
 
+⚠️ Disclaimer
+This tester is a local development tool. While it mimics common evaluation pitfalls, passing these tests does not guarantee a 100% score on the actual Moulinette. Always verify your logic manually.
+
+Developed by Kerem Şener at 42 Kocaeli.
+
 ### 1. Compile & Run
 ```bash
 make
@@ -38,7 +43,3 @@ ft_lstnew, ft_lstadd_front, ft_lstsize, ft_lstlast, ft_lstadd_back, ft_lstdelone
 
 [Additional]
 ft_substr, ft_strjoin, ft_strtrim, ft_split, ft_itoa, ft_strmapi, ft_striteri, ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
-⚠️ Disclaimer
-This tester is a local development tool. While it mimics common evaluation pitfalls, passing these tests does not guarantee a 100% score on the actual Moulinette. Always verify your logic manually.
-
-Developed by Kerem Şener at 42 Kocaeli.
