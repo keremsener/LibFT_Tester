@@ -1,31 +1,29 @@
-# 📚 42 Libft (2026 Edition)
+# 📚 42 Libft (2026 Curriculum - Full Mandatory)
 
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![School](https://img.shields.io/badge/School-42-black)
-![Score](https://img.shields.io/badge/Score-125%2F100-success)
+![System](https://img.shields.io/badge/LinkedLists-MANDATORY-red)
 
 ## 💡 About The Project
-This repository contains my implementation of the **Libft** project, the very first project of the 42 School curriculum. The goal is to recreate essential C library functions from scratch to understand low-level memory management and algorithm design.
+This is the complete implementation of the **Libft** project for the modern 42 curriculum. 
 
-Unlike standard implementations, this repository includes a **Custom Ultimate Tester** designed to mimic **Moulinette's** strict grading criteria, covering specific edge cases that often cause failures.
+**IMPORTANT:** In this version of the curriculum, **Linked Lists are MANDATORY**. There is no "bonus" section; every function listed below is required to pass.
 
-## 🛠️ Features
-* **Memory Manipulation:** `memset`, `memcpy`, `memmove` (handles overlap), etc.
-* **String Manipulation:** `strlen`, `strlcpy`, `strnstr`, `split` (robust), etc.
-* **Linked Lists:** Full bonus part implementation (`t_list`).
-* **Strict Error Handling:** Defense against NULL pointers and segmentation faults.
+## 🛠️ The Ultimate Tester (`tester.c`)
+This repository includes a standalone `tester.c` file designed to stress-test your library against **Moulinette's** strict edge cases.
 
-## 🧪 The Ultimate Tester
-I have developed a custom `main.c` tester included in this repo. It is designed to be **stricter than usual** to ensure stability.
-
-### Key Test Scenarios:
-* **Moulinette Traps:** specifically tests `ft_strlcat` return values and `ft_substr` allocations.
-* **Edge Cases:** Handles empty strings, consecutive delimiters in `ft_split`, and sign handling in `ft_atoi`.
-* **Visual Feedback:** Color-coded output (Green for PASS, Red for FAIL).
+### It tests for:
+* **Strict Memory Management:** Checks for leaks in `ft_split` and `ft_substr`.
+* **Moulinette Traps:** Verifies specific return values for `ft_strlcat` and `ft_atoi` (sign handling).
+* **Mandatory Linked Lists:** Verifies `ft_lst*` functions as core requirements.
 
 ## 🚀 How to Run
 
-### 1. Clone the Repository
+You only need the `tester.c` file and your library.
+
+### 1. Compile your library
 ```bash
-git clone [https://github.com/YOUR_USERNAME/42-libft-ultimate.git](https://github.com/YOUR_USERNAME/42-libft-ultimate.git)
-cd 42-libft-ultimate
+make
+2. Compile and Run the TesterBashgcc -Wall -Wextra -Werror tester.c libft.a -o tester
+./tester
+You will see Green [OK] for passed tests and Red [FAIL] for errors.📋 Mandatory Functions ListAll functions below are required.Memory & StringLinked Lists (Mandatory)Additionalft_memsetft_lstnewft_substrft_bzeroft_lstadd_frontft_strjoinft_memcpyft_lstsizeft_strtrimft_memmoveft_lstlastft_splitft_memchrft_lstadd_backft_itoaft_memcmpft_lstdeloneft_strmapift_strlenft_lstclearft_striterift_strlcpyft_lstiterft_putchar_fdft_strlcatft_lstmapft_putstr_fdft_strchrft_putendl_fdft_strrchrft_putnbr_fdft_strnstrft_strncmpft_atoift_isalphaft_isdigitft_isalnumft_isasciift_isprintft_toupperft_tolowerft_callocft_strdup⚠️ DisclaimerThis tester is a local development tool. While it mimics common evaluation pitfalls, passing these tests does not guarantee a 100% score on the actual Moulinette. Always verify your logic manually.
