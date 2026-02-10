@@ -24,6 +24,31 @@ You only need the `tester.c` file and your library.
 ### 1. Compile your library
 ```bash
 make
-2. Compile and Run the TesterBashgcc -Wall -Wextra -Werror tester.c libft.a -o tester
+gcc -Wall -Wextra -Werror tester.c libft.a -o tester
 ./tester
-You will see Green [OK] for passed tests and Red [FAIL] for errors.📋 Mandatory Functions ListAll functions below are required to pass the project.Memory & StringLinked Lists (Mandatory)Additionalft_memsetft_lstnewft_substrft_bzeroft_lstadd_frontft_strjoinft_memcpyft_lstsizeft_strtrimft_memmoveft_lstlastft_splitft_memchrft_lstadd_backft_itoaft_memcmpft_lstdeloneft_strmapift_strlenft_lstclearft_striterift_strlcpyft_lstiterft_putchar_fdft_strlcatft_lstmapft_putstr_fdft_strchrft_putendl_fdft_strrchrft_putnbr_fdft_strnstrft_strncmpft_atoift_isalphaft_isdigitft_isalnumft_isasciift_isprintft_toupperft_tolowerft_callocft_strdup⚠️ DisclaimerThis tester is a local development tool. While it mimics common evaluation pitfalls, passing these tests does not guarantee a 100% score on the actual Moulinette. Always verify your logic manually.
+Memory & String,Linked Lists (Mandatory),Additional
+ft_memset,ft_lstnew,ft_substr
+ft_bzero,ft_lstadd_front,ft_strjoin
+ft_memcpy,ft_lstsize,ft_strtrim
+ft_memmove,ft_lstlast,ft_split
+ft_memchr,ft_lstadd_back,ft_itoa
+ft_memcmp,ft_lstdelone,ft_strmapi
+ft_strlen,ft_lstclear,ft_striteri
+ft_strlcpy,ft_lstiter,ft_putchar_fd
+ft_strlcat,ft_lstmap,ft_putstr_fd
+ft_strchr,,ft_putendl_fd
+ft_strrchr,,ft_putnbr_fd
+ft_strnstr,,
+ft_strncmp,,
+ft_atoi,,
+ft_isalpha,,
+ft_isdigit,,
+ft_isalnum,,
+ft_isascii,,
+ft_isprint,,
+ft_toupper,,
+ft_tolower,,
+ft_calloc,,
+ft_strdup,,
+⚠️ Disclaimer
+This tester is a local development tool. While it mimics common evaluation pitfalls, passing these tests does not guarantee a 100% score on the actual Moulinette. Always verify your logic manually.
